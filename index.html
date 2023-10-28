@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VLAST - Leap into the future</title>
+    <link href="https://fonts.cdnfonts.com/css/aquire" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
+    <link rel="shortcut icon" type="image/png" href="./l1Rzswq4.ico"/>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <img src="./logo05-219upScale.jpg" alt="" class="desktop" class="fade-in">
+        <img src="./logo05mobiUpScale.jpg" alt="" class="mobi" class="fade-in">
+        <div class="bottom-side">
+            <div>
+                <div style="padding-bottom: 1vh;text-align: center;">coming soon</div>
+                <div style="padding-bottom: 1vh;text-align: center;">Powered by Khoa, Tran Dang</div>
+                <div style="font-family: 'Roboto';text-align: center;">
+                    khoatd@vlast.io.vn
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
+<style>
+    @import url('https://fonts.cdnfonts.com/css/aquire');
+
+    body {
+        padding: 0;
+        margin: 0;
+        font-family: 'Aquire', sans-serif;
+    }
+
+    .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        /* Đảm bảo chiều cao của container bằng chiều cao của màn hình */
+        overflow: hidden;
+        position: relative;
+    }
+
+    img {
+        object-fit: cover;
+        object-position: center;
+        width: 100%;
+        height: 100%;
+        max-width: none;
+        max-height: none;
+    }
+
+    .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        overflow: hidden;
+        position: relative;
+        background-color: #f0f0f0;
+        /* Đặt màu nền của phần dư ở đây */
+    }
+
+    .bottom-side {
+        position: absolute;
+        bottom: 16px;
+        font-size: large;
+        color: white;
+    }
+
+    img {
+        object-fit: cover;
+        object-position: center;
+        width: 100%;
+        height: 100%;
+        max-width: none;
+        max-height: none;
+    }
+
+    img.fade-in {
+        object-fit: cover;
+        object-position: center;
+        width: 100%;
+        height: 100%;
+        max-width: none;
+        max-height: none;
+        opacity: 0;
+        /* Đặt mặc định ảnh ở trạng thái ẩn */
+        animation: fadeIn 1s ease-in forwards;
+        /* Sử dụng animation có tên là fadeIn */
+    }
+
+    @keyframes fadeIn {
+        from {
+            opacity: 0;
+        }
+
+        to {
+            opacity: 1;
+        }
+    }
+
+    .mobi {
+        display: none;
+    }
+
+    .content {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background-color: #f0f0f0;
+        /* Đặt màu nền của nội dung */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        box-sizing: border-box;
+        padding: 20px;
+        /* Thay đổi khoảng cách nếu cần */
+    }
+
+    @media (max-width: 768px) {
+        .container {
+            display: block;
+        }
+
+        .content {
+            position: absolute;
+            background-color: transparent;
+            /* Xóa màu nền của nội dung */
+        }
+
+        .desktop {
+            display: none;
+        }
+
+        .mobi {
+            display: block;
+        }
+
+        .bottom-side {
+            position: absolute;
+            bottom: 16px;
+            font-size: large;
+            color: white;
+            width: 100%;
+        }
+
+    }
+    @media (max-width: 282px) {
+        .bottom-side {
+            font-size: 16px;
+        }
+    }
+</style>
